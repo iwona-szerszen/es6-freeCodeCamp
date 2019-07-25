@@ -117,3 +117,31 @@ function add(...nums) {
 }
 
 add(4, 5, 8, 12);
+
+
+// Lesson 11 Arrow function
+function addAll(...nums) {
+	let total = nums.reduce((x, y) => x + y);
+	console.log(total);
+}
+
+addAll(4, 5, 8, 12);
+
+
+// Lesson 12 Default params
+function addArrayElement(numArray = []) {
+	let total = 0;
+	numArray.forEach((element) => {
+		total += element;
+	});
+	console.log(total);
+}
+
+addArrayElement();
+
+
+// Lesson 13 Includes
+let numericArray = [1, 2, 3, 4, 5];
+
+console.log(numericArray.includes(0));
+console.log(numericArray.includes(2));
